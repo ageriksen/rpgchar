@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+$(objdir)/%.o	makefile	/^$(objdir)\/%.o : $(srcdir)\/%.cpp$/;"	t
+ATTRIBUTECLASS_H	hdr/attributeClass.h	/^#define ATTRIBUTECLASS_H$/;"	d
+Aspect	hdr/attributeClass.h	/^} Aspect;$/;"	t	typeref:struct:__anon95d7e8b20108
+Attribute	hdr/attributeClass.h	/^    Attribute(){}$/;"	f	class:Attribute
+Attribute	hdr/attributeClass.h	/^    Attribute(int _ID): ID(_ID) {}$/;"	f	class:Attribute
+Attribute	hdr/attributeClass.h	/^    Attribute(std::string _name): name(_name) {}$/;"	f	class:Attribute
+Attribute	hdr/attributeClass.h	/^    Attribute(std::string _name, int _ID): name(_name), ID(_ID) {}$/;"	f	class:Attribute
+Attribute	hdr/attributeClass.h	/^    Attribute(std::string _name, int _ID, std::vector<Aspect> _aspects): name(_name), ID(_ID), a/;"	f	class:Attribute
+Attribute	hdr/attributeClass.h	/^class Attribute$/;"	c
+CHARACTERCLASS_H	hdr/characterClass.h	/^#define CHARACTERCLASS_H$/;"	d
+Character	hdr/characterClass.h	/^class Character$/;"	c
+Character	src/characterClass.cpp	/^Character::Character()$/;"	f	class:Character
+FEATCLASS_H	hdr/featClass.h	/^#define FEATCLASS_H$/;"	d
+Feat	hdr/featClass.h	/^class Feat$/;"	c
+GetAbility	hdr/characterClass.h	/^        std::vector<std::string> GetAbility(int index) { return m_abilities[index]; }$/;"	f	class:Character	typeref:typename:std::vector<std::string>
+GetAllAbilities	hdr/characterClass.h	/^        std::vector<std::vector<std::string>> GetAllAbilities() { return m_abilities; }$/;"	f	class:Character	typeref:typename:std::vector<std::vector<std::string>>
+GetAllAtributes	hdr/characterClass.h	/^        std::vector<int> GetAllAtributes() { return m_attributes; }$/;"	f	class:Character	typeref:typename:std::vector<int>
+GetAllfeats	hdr/characterClass.h	/^        std::vector<Feat> GetAllfeats() { return m_feats; }$/;"	f	class:Character	typeref:typename:std::vector<Feat>
+GetAttribute	hdr/characterClass.h	/^        int GetAttribute(int index) { return m_attributes[index]; }$/;"	f	class:Character	typeref:typename:int
+GetFeat	hdr/characterClass.h	/^        Feat GetFeat(int index) {return m_feats[index]; }$/;"	f	class:Character	typeref:typename:Feat
+GetName	hdr/featClass.h	/^    std::string GetName() { return name; }$/;"	f	class:Feat	typeref:typename:std::string
+Gui	hdr/gui.h	/^class Gui$/;"	c
+Gui	src/gui.cpp	/^Gui::Gui() {init_x();}$/;"	f	class:Gui
+ID	hdr/attributeClass.h	/^    int ID; \/\/ of type 0xab, 0 to f$/;"	m	class:Attribute	typeref:typename:int
+SetAttributeSize	hdr/characterClass.h	/^        void SetAttributeSize(int _size) { m_attributes.resize(_size); }$/;"	f	class:Character	typeref:typename:void
+__anon95d7e8b20108	hdr/attributeClass.h	/^{$/;"	s
+_objs	makefile	/^_objs = main.o gui.o characterClass.o #attributeClass.o featClass.o  $/;"	m
+aspects	hdr/attributeClass.h	/^    std::vector<Aspect> aspects;$/;"	m	class:Attribute	typeref:typename:std::vector<Aspect>
+atribute	hdr/featClass.h	/^    Attribute atribute; $/;"	m	class:Feat	typeref:typename:Attribute
+build	makefile	/^build : ${objs} $/;"	t
+cc	makefile	/^cc= c++ -Wall # -03 # last one for optimization$/;"	m
+classification	hdr/featClass.h	/^    std::string classification;$/;"	m	class:Feat	typeref:typename:std::string
+close_x	src/gui.cpp	/^void Gui::close_x()$/;"	f	class:Gui	typeref:typename:void
+dis	hdr/gui.h	/^    Display *dis;$/;"	m	class:Gui	typeref:typename:Display *
+gc	hdr/gui.h	/^    GC gc;$/;"	m	class:Gui	typeref:typename:GC
+getID	hdr/attributeClass.h	/^    int getID() { return ID; }$/;"	f	class:Attribute	typeref:typename:int
+getName	hdr/attributeClass.h	/^    std::string getName() { return name; }$/;"	f	class:Attribute	typeref:typename:std::string
+init_x	src/gui.cpp	/^void Gui::init_x()$/;"	f	class:Gui	typeref:typename:void
+lib	makefile	/^lib= -lX11$/;"	m
+m_abilities	hdr/characterClass.h	/^        std::vector<std::vector<std::string>> m_abilities;$/;"	m	class:Character	typeref:typename:std::vector<std::vector<std::string>>
+m_attributes	hdr/characterClass.h	/^        std::vector<int> m_attributes; $/;"	m	class:Character	typeref:typename:std::vector<int>
+m_feats	hdr/characterClass.h	/^        std::vector<Feat> m_feats;$/;"	m	class:Character	typeref:typename:std::vector<Feat>
+main	src/guiclass.cpp	/^int main(int argc, char **argv)$/;"	f	typeref:typename:int
+main	src/main.cpp	/^int main()$/;"	f	typeref:typename:int
+modifier	hdr/featClass.h	/^    int modifier;$/;"	m	class:Feat	typeref:typename:int
+name	hdr/attributeClass.h	/^    std::string name;$/;"	m	class:Attribute	typeref:typename:std::string
+name	hdr/attributeClass.h	/^    std::string name;$/;"	m	struct:__anon95d7e8b20108	typeref:typename:std::string
+name	hdr/featClass.h	/^    std::string name;$/;"	m	class:Feat	typeref:typename:std::string
+objdir	makefile	/^objdir = obj$/;"	m
+objs	makefile	/^objs = $(patsubst %, $(objdir)\/%, $(_objs))$/;"	m
+screen	hdr/gui.h	/^    int screen;$/;"	m	class:Gui	typeref:typename:int
+setAspects	hdr/attributeClass.h	/^    void setAspects( std::vector<Aspect> _aspects ) { aspects = _aspects; }$/;"	f	class:Attribute	typeref:typename:void
+setID	hdr/attributeClass.h	/^    void setID( int _ID ) { ID = _ID; }$/;"	f	class:Attribute	typeref:typename:void
+setName	hdr/attributeClass.h	/^    void setName( std::string _name ) { name = _name; }$/;"	f	class:Attribute	typeref:typename:void
+setNewAttribute	hdr/characterClass.h	/^        void setNewAttribute(int _new) { m_attributes.push_back(_new); }$/;"	f	class:Character	typeref:typename:void
+srcdir	makefile	/^srcdir = src$/;"	m
+value	hdr/attributeClass.h	/^    int value;$/;"	m	struct:__anon95d7e8b20108	typeref:typename:int
+win	hdr/gui.h	/^    Window win;$/;"	m	class:Gui	typeref:typename:Window
+~Attribute	hdr/attributeClass.h	/^    ~Attribute() {}$/;"	f	class:Attribute
+~Character	hdr/characterClass.h	/^        ~Character() {}$/;"	f	class:Character
+~Gui	src/gui.cpp	/^Gui::~Gui() {close_x();}$/;"	f	class:Gui
